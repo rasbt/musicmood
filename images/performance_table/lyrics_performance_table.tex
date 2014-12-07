@@ -1,0 +1,24 @@
+
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{table}[h]
+  \caption{Performance of the Multinomial naive Bayes classifier using a 1-gram model term and frequency-inverse document frequencies (tf-idf) as feature vectors for song lyrics classification by mood. The performance is shown for the training dataset (n=1000) and the validation dataset (n=200). The true positive rate was calculated from songs labeled as happy that were correctly classified, and the false positive rate was calculated from sad songs that were misclassified as happy. ACC=accuracy, PRE=precision, REC=recall, F1=F1-score, \mbox{ROC AUC=}receiver operating characteristic area under the curve.}
+  
+  \begin{tabular}[t]{| l  | l || l | l | l | l | l  |l |}
+   \hline
+    Dataset & ACC (\%) & PRE (\%) &  REC (\%) & F1 (\%) & ROC AUC (\%)\\
+   \hline
+   \hline
+
+   Training & 80.00 &  99.60 & 55.38 & 71.18 & 77.60  \\
+   Validation & 54.50 &  88.89 & 15.24 & 26.02 & 56.57  \\
+
+  
+   \hline
+  \end{tabular}
+\end{table}
+
+\end{document}
