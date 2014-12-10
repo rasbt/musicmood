@@ -8,11 +8,11 @@ This project is about building a music recommendation system for users who want 
 
 ### Links
 
-- [Try the online app](http://sebastianraschka.com/Webapps/musicmood.html)
-- [View the data collection IPython notebook](http://nbviewer.ipython.org/github/rasbt/musicmood/blob/master/code/collect_data/data_collection.ipynb)
-- [View the model training IPython notebook](http://nbviewer.ipython.org/github/rasbt/musicmood/blob/master/code/classify_lyrics/train_lyrics.ipynb)
-- [About my experiences with this project](http://sebastianraschka.com/Articles/2014_musicmood.html)
-
+- [The web application](http://sebastianraschka.com/Webapps/musicmood.html)
+- [The data collection IPython notebook](http://nbviewer.ipython.org/github/rasbt/musicmood/blob/master/code/collect_data/data_collection.ipynb)
+- [The model training IPython notebook](http://nbviewer.ipython.org/github/rasbt/musicmood/blob/master/code/classify_lyrics/train_lyrics.ipynb)
+- [An article about my experiences with this project](http://sebastianraschka.com/Articles/2014_musicmood.html)
+- [A keynote presentation about this project](http://www.slideshare.net/SebastianRaschka/musicmood-20140912)
 
 <br>
 <br>
