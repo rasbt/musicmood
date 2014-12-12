@@ -1,0 +1,17 @@
+, ACC (%),PRE (%),REC (%),F1 (%),ROC AUC (%)
+Training-CountVec,92.6,90.97,92.6,91.78,92.6
+Training-CountVec porter,93.6,92.83,92.83,92.83,93.52
+Training-CountVec wl,79.2,73.9,82.51,77.97,79.52
+Training-CountVec porter+wl,80.5,75.88,82.51,79.05,80.7
+Training-TfidfVec,89.2,97.74,77.58,86.5,88.07
+Training-TfidfVec porter,86.2,99.04,69.73,81.84,84.59
+Training-TfidfVec wl,83.3,80.26,82.96,81.59,83.27
+Training-TfidfVec porter+wl,83.2,80.48,82.29,81.37,83.11
+Test-CountVec,72.5,79.76,63.81,70.9,72.96
+Test-CountVec porter,68.0,75.95,57.14,65.22,68.57
+Test-CountVec wl,64.5,66.04,66.67,66.35,64.39
+Test-CountVec porter+wl,63.5,66.0,62.86,64.39,63.53
+Test-TfidfVec,60.5,82.5,31.43,45.52,62.03
+Test-TfidfVec porter,60.5,84.21,30.48,44.76,62.08
+Test-TfidfVec wl,68.0,73.03,61.9,67.01,68.32
+Test-TfidfVec porter+wl,63.5,68.6,56.19,61.78,63.88

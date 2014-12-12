@@ -70,8 +70,6 @@ This project is about building a music recommendation system for users who want 
 [back to top](#sections)
 
 
-![](./images/roc_all.png)
-
 ![](./images/roc_best.png)
 
-![](./images/perform_table.png)
+![](./images/performance_table.png)
