@@ -1,0 +1,25 @@
+ACC (%),PRE (%),REC (%),F1 (%),ROC AUC (%)
+Train CountVec,99.80,99.78,99.78,99.78,99.80
+Train CountVec porter,99.80,99.78,99.78,99.78,99.80
+Train CountVec snowball,99.80,99.78,99.78,99.78,99.80
+Train CountVec wl,99.50,100.00,98.88,99.44,99.44
+Train CountVec porter+wl,99.50,99.77,99.10,99.44,99.46
+Train CountVec snowball+wl,99.50,99.77,99.10,99.44,99.46
+Train TfidfVec,99.80,99.55,100.00,99.78,99.82
+Train TfidfVec porter,99.80,100.00,99.55,99.78,99.78
+Train TfidfVec snowball,99.80,99.78,99.78,99.78,99.80
+Train TfidfVec wl,99.40,99.55,99.10,99.33,99.37
+Train TfidfVec porter+wl,99.40,99.55,99.10,99.33,99.37
+Train TfidfVec snowball+wl,99.40,100.00,98.65,99.32,99.33
+Test CountVec,61.50,70.59,45.71,55.49,62.33
+Test CountVec porter,61.50,72.58,42.86,53.89,62.48
+Test CountVec snowball,68.00,80.60,51.43,62.79,68.87
+Test CountVec wl,61.00,70.15,44.76,54.65,61.85
+Test CountVec porter+wl,62.50,70.27,49.52,58.10,63.18
+Test CountVec snowball+wl,62.00,69.33,49.52,57.78,62.66
+Test TfidfVec,60.50,70.97,41.90,52.69,61.48
+Test TfidfVec porter,63.50,77.59,42.86,55.21,64.59
+Test TfidfVec snowball,61.50,74.14,40.95,52.76,62.58
+Test TfidfVec wl,56.50,62.50,42.86,50.85,57.22
+Test TfidfVec porter+wl,61.00,68.49,47.62,56.18,61.70
+Test TfidfVec snowball+wl,63.50,69.05,55.24,61.38,63.93
