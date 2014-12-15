@@ -6,6 +6,9 @@ dataset/validation/h5_valid/*.h5
 dataset/training/h5_train/*.h5
 dataset/auxiliary/h5_aux/*.h5
 
+dataset/million/artist_title.sqlite
+dataset/million/artist_title.sqlite-journal
+
 .ipynb_checkpoints
 .DS_Store
 # Byte-compiled / optimized / DLL files
