@@ -1,0 +1,124 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Song Mood Classification</title>
+	<!--META-->
+	<meta name="description" content="An automated song mood classier based on song lyrics analysis.">
+    <meta name="Author" content="Sebastian Raschka">
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	
+  </head>
+  <body>
+
+      <!-- Main Navigation Bar START -->
+
+  	<a href = "http://sebastianraschka.com"><img src="{{ url_for('static', filename='images/title_text.png') }}" id="title_img"></a>
+
+      <ul class="navbar">
+          <li><a href="http://sebastianraschka.com/articles.html">blog</a></li>
+          <li><a href="http://sebastianraschka.com/webapps.html">webapps</a></li>
+          <li><a href="http://sebastianraschka.com/projects.html">projects</a></li>
+  	    <li><a href="http://sebastianraschka.com/publications.html">books</a></li>
+  	    <li><a href="http://sebastianraschka.com/contact.html">about+contact</a></li>
+      </ul>
+
+
+	  <h1 class='caption1'>A Music Mood Classifier Based on Lyrics</h1>
+
+
+    <div class='min-bodyheight'>
+
+
+	
+
+
+      <p><strong>Artist name:</strong> {{artistname}}</p>
+      <p><strong>Song title:</strong> {{songtitle}}</p>
+	  
+	  	<div style='border: 1px solid black; width:800px'>
+      <div style='margin:20px;'><strong>Lyrics:</strong>
+      <br>{{lyrics}}</div>
+	  	</div>
+	  
+  	</div>
+	  <p><strong>Prediction:<font color={{font_color}}>  {{pred}} </p></font></strong><!--</strong> {{proba }}</p>-->
+	  
+<script src="http://www.yvoschaap.com/ytpage/ytembed.js" type="text/javascript"></script>
+<div id="ytThumbs"></div>
+
+
+	  <div>
+	  <form action="/">
+	    <input type=submit value='Try again'>
+	  </form>
+	  </div>
+	  
+	 <div style='height:10px'></div>
+		  
+    <div>
+    <br><a href="http://m.youtube.com/results?q={{artistname}} {{songtitle}}" title="{{artistname}} - {{songtitle}}" target="_blank">Listen to this song on YouTube.</a></div>
+		  
+	<div style='height:10px'></div>
+		  
+	  <p><strong>I am looking forward to your feedback in order to improve the mood classifier!</strong>
+		  Clicking one of the two buttons below will add a new mood label to existing songs in the database, or
+		  a new database entry will be created if this song was not included in the training dataset, yet.</p>
+	  
+	  
+	  <form method=post action="/feedback">
+	    <p>I think this song is <input type=submit value={{button_happy}} name='feedback_button'>
+		   <input type=submit value={{button_sad}} name='feedback_button'></p>
+		  
+	  </form>
+
+	  <div style='height:20px'></div>
+	  <div>
+		  <ul>
+			<li>{{num_lyrics}} lyrics</li>
+		    <li>{{num_moodlab}} mood labels</li>
+		  </ul>
+		  have been collected so far.
+	</div>
+
+
+
+	  
+
+	  
+	  
+	  
+	  
+	  
+	  
+    </div>
+
+
+<!-- START Footer -->
+	<div class ='footer'>
+        <hr>
+        &copy; 2013-present Sebastian Raschka |<a href="https://twitter.com/rasbt">@rasbt</a> <a href="mailto:se.raschka@gmail.com">email</a> <a href="http://sebastianraschka.com/rss_feed.xml">rss</a>
+	    <hr>
+    </div>
+<!-- END Footer -->
+
+<!-- Start Google Analytics -->
+	<script type="text/javascript">
+
+  		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-38457794-1']);
+  		_gaq.push(['_trackPageview']);
+
+  		(function() {
+    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+	</script>
+<!-- End  Google Analytics -->
+
+  </body>
+</html>

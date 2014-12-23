@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Song Mood Classification</title>
+	<!--META-->
+	<meta name="description" content="An automated song mood classier based on song lyrics analysis.">
+    <meta name="Author" content="Sebastian Raschka">
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+
+      <!-- Main Navigation Bar START -->
+
+  	<a href = "http://sebastianraschka.com"><img src="{{ url_for('static', filename='images/title_text.png') }}" id="title_img"></a>
+
+      <ul class="navbar">
+          <li><a href="http://sebastianraschka.com/articles.html">blog</a></li>
+          <li><a href="http://sebastianraschka.com/webapps.html">webapps</a></li>
+          <li><a href="http://sebastianraschka.com/projects.html">projects</a></li>
+  	    <li><a href="http://sebastianraschka.com/publications.html">books</a></li>
+  	    <li><a href="http://sebastianraschka.com/contact.html">about+contact</a></li>
+      </ul>
+
+
+	  <h1 class='caption1'>A Music Mood Classifier Based on Lyrics</h1>
+
+
+<div style='height:50px'></div>
+
+{% from "_formhelpers.html" import render_field %}
+<form method=post action="/results">
+  <dl>
+    {{ render_field(form.artistname) }}
+    {{ render_field(form.songtitle) }}
+
+  </dl>
+  <div style='padding-left:40px;'>
+	  <input type=submit value='Search' name='search_btn'> 
+	  &nbsp;&nbsp;&nbsp;
+	  <input type=submit value='Random song' name='search_btn'>
+	  
+	  <div style='height:40px;'></div> 
+	  <p> Or pick a song that has been labeled as <em>happy</em> or <em>sad</em> based on
+	  user feedback (majority rule):</p>
+	  <input type=submit value='Random happy song' name='search_btn'>
+	  <input type=submit value='Random sad song' name='search_btn'>
+  		
+  </div>
+</form>
+
+
+<div style='height:50px'></div>
+<form action="http://sebastianraschka.com/Webapps/musicmood.html">
+	<div style='padding-left:40px;'>
+  	  	<input type=submit value='Back to the overview'>
+	 </div>
+</form>
+
+
+
+<!-- START Footer -->
+	<div class ='footer'>
+        <hr>
+        &copy; 2013-present Sebastian Raschka |<a href="https://twitter.com/rasbt">@rasbt</a> <a href="mailto:se.raschka@gmail.com">email</a> <a href="http://sebastianraschka.com/rss_feed.xml">rss</a>
+	    <hr>
+    </div>
+<!-- END Footer -->
+
+<!-- Start Google Analytics -->
+	<script type="text/javascript">
+
+  		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-38457794-1']);
+  		_gaq.push(['_trackPageview']);
+
+  		(function() {
+    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+	</script>
+<!-- End  Google Analytics -->
+
+  </body>
+</html>

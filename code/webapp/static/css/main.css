@@ -1,0 +1,573 @@
+/* Sebastian Raschka 2013-2014 */
+
+/***************************
+Global Settings
+***************************/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400italic,400,700);
+
+
+.min-bodyheight {
+    min-height: 300px;
+}
+
+.caption1 {
+    margin: 0px 0px 40px 0px;
+}
+
+body {
+	background: #ffffff; 
+	height: 100%;
+	width: 940px;
+	margin: 0 auto;
+	font: 13px/25px 'Roboto', sans-serif;
+	
+}
+
+img {
+    clear:both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 685px;
+}
+
+img:a {
+    clear:both;
+    padding-top:10px;
+    padding-bottom:10px;
+    max-width: 685px;
+}
+
+
+p {
+	width: 700px;
+	padding-right:120px;
+}
+
+
+h1, h2, h3, h4, h5, h6 { 
+	font-family: 'Roboto', sans-serif;
+    font-weight: 700; 
+	color: #222;
+    line-height: 140%; 
+    width: 650px;
+    margin-bottom: 0;
+    padding-bottom:0;
+}
+
+
+h1 {
+    padding-top: 60px;
+}
+
+h2 {
+    padding-top: 40px;
+}
+
+h3 {
+    padding-top: 40px;
+}
+
+h4 {
+    padding-top: 40px;
+}
+
+h5 {
+    padding-top: 40px;
+}
+
+h6 {
+    padding-top: 40px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: #6202C9;
+}
+
+/* visited link */
+a:visited {
+    color: #8585AD;
+}
+
+/* mouse over link */
+a:hover {
+    color: #CCCCCC;
+}
+
+/* selected link */
+a:active {
+    color: #CCCCCC;
+}
+
+
+
+h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link {
+    color: #000000;
+}
+
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+    color: #000000;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: #6202C9;
+}
+
+
+
+
+:hover {
+	/* Text transition */
+	-o-transition: 0.3s  ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+  	-moz-transition: 0.3s ease-in-out;
+  	-webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/***************************
+Main navigation bar
+***************************/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+
+.navbar ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    margin-right: -5px;
+	font-size: 16px;
+   	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
+    border-bottom: 1px solid black;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.navbar #active {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.navbar #active:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+#title_img {
+    clear:both;
+    border-style: none;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#title_img:hover {
+  -webkit-filter: grayscale(100%);
+  }
+
+/***************************
+Footer
+***************************/
+
+.footer {
+    clear:both;
+	width: 700px;
+	font-size: 0.8em;
+    float:left;
+    padding-top:100px;
+    padding-bottom:100px;
+    text-align:center;
+
+} 
+
+
+/* unvisited link */
+.footer a:link {
+    color: #000000;
+}
+
+/* visited link */
+.footer a:visited {
+    color: #000000;
+}
+
+/* mouse over link */
+.footer a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+/* selected link */
+.footer a:active {
+    color: #000000;
+}
+
+
+.footer a {
+    text-decoration: none;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+
+
+/***************************
+Inline Images
+***************************/
+
+img.left {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    float: left; 
+    clear: none;
+}
+
+img.right {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    float: right; 
+    clear: none;
+}
+
+
+/***************************
+Sidebars
+***************************/
+
+.right_sidebar {
+    padding-left: 20px;
+	padding-top: 20px;
+    padding-bottom: 20px;
+	min-height: 100px;	
+	float: right;	
+    font-size: 1em;
+	
+}
+
+ul.right_sidebar {
+    padding: 0;
+    margin: 0;
+    padding-top: 100px;
+    list-style-type: none;
+}
+
+ul.right_sidebar li {
+    margin: 0 5px 0 0;
+	
+}
+
+ul.right_sidebar a {
+    color: #000000;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:10px;
+    padding-right:10px;
+	
+}
+
+
+ul.right_sidebar a:hover {
+    color: #ffffff;
+    background-color: #000000;
+	
+}
+
+ul.right_sidebar .subcategory1 {
+    font-weight: bold;
+    padding-top:3em;
+}
+
+ul.right_sidebar .subcategory2 {
+    font-weight: bold;
+	font-size: 1.4em;
+    padding-top:3em;
+	padding-bottom:1em;
+
+}
+
+.searchbox {
+padding-left: 770px;
+position:absolute;
+width: 230px;
+}
+
+
+
+/***************************
+Tables
+***************************/
+
+
+.table_black_bottom {
+    border-collapse: collapse;
+}
+
+.table_black_bottom tr {
+    border-bottom: 1px solid #000;
+}
+
+
+/***************************
+Blog panel
+***************************/
+
+#rsslogo {
+    background-image: url("../Images/rss_white.png");
+    clear: both;
+    padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#rsslogo:hover {
+    background-image: url("../Images/rss_black.png");
+}
+
+
+.table_blog {
+    border-collapse: collapse;
+    font-size: 1em;
+    line-height: 160%; 
+
+}
+
+.table_blog tr {
+    border-bottom: 1px solid #000;
+}
+
+.table_blog td {
+    padding-top:30px;
+    padding-bottom:30px;
+    max-width:450px; 
+    padding-left:20px;
+}
+
+.table_blog a {
+    color: #000000;
+}
+
+.table_blog tr:hover {
+    background-color: #F0F0F5;
+	cursor: pointer;
+	-webkit-filter: grayscale(100%);
+}
+
+
+.table_blog .header {
+	font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom:1.2em;
+}
+
+.table_blog .abstract {
+    padding-top:1.2em;
+
+}
+
+
+        
+.table_blog .highlight_tag {
+    display: none;
+    visibility: hidden;
+    display: inline;
+}
+
+.table_blog .year_tag {
+    display: none;
+    visibility: hidden;
+    display: inline;
+}
+
+.table_blog .category_tag {
+    font-size: 0.7em;
+}
+
+    
+
+
+
+
+
+
+
+.table_project .project_tag {
+    display: none;
+    visibility: hidden;
+    display: inline;
+}
+
+
+
+.table_project {
+    border-collapse: collapse;
+    font-size: 1em;
+    line-height: 160%; 
+
+}
+
+.table_project tr {
+    border-bottom: 1px solid #000;
+}
+
+.table_project td {
+    padding-top:30px;
+    padding-bottom:30px;
+    max-width:450px; 
+    padding-left:20px;
+}
+
+
+
+/* unvisited link */
+.table_project p:a:link {
+    color: #6202C9;
+}
+
+/* visited link */
+.table_project p:a:visited {
+    color: #8585AD;
+}
+
+/* mouse over link */
+.table_project p:a:hover {
+    color: #CCCCCC;
+}
+
+/* selected link */
+.table_project p:a:active {
+    color: #CCCCCC;
+}
+
+
+
+
+
+/***************************
+Lists
+***************************/
+
+ul.dense_small {
+    font-size:1em;
+}
+
+ul.dense_small li {
+    margin: 0 5px 0 0;
+}
+
+
+/***************************
+Text
+***************************/
+
+.dense_italics {
+    font-style: italic;
+	width:450px;
+    font-size: 1em;
+}
+
+.dense_small {
+    font-size: 0.9em;
+}
+
+/***************************
+Image Effects
+***************************/
+
+
+.grayscale {
+    clear:both;
+    border-style: none;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.grayscale:hover {
+  -webkit-filter: grayscale(100%);
+  }
+
+.anti_grayscale {
+    clear:both;
+    border-style: none;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	-webkit-filter: grayscale(100%);
+}
+
+.anti_grayscale:hover {
+  -webkit-filter: grayscale(0%);
+  }
+
+
+
+.hover_light_dark { 
+    opacity: 0.5; 
+    filter: alpha(opacity=50); 
+     no-repeat; 
+} 
+
+.hover_light_dark:hover { 
+    opacity: 1; 
+    filter: alpha(opacity=100);
+}
+
+
+.hover_dark_light { 
+    opacity: 1; 
+    filter: alpha(opacity=100); 
+    no-repeat; 
+} 
+
+.hover_dark_light:hover { 
+    opacity: 0.5; 
+    filter: alpha(opacity=500);
+}
+
+
+
+
