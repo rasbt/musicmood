@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Song mood classification based on lyrics</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+
+<h3>Lyrics:</h3>
+<div>{{ content }}</div>
+
+<h3>Prediction:</h3>
+<div>This song is <strong>{{ prediction }}</strong>
+	 (probability: {{ probability }}%).</div>
+
+
+<div id='button'>
+	  <form action="/thanks" method="post">
+		<input type=hidden value='{{ prediction }}' name='prediction'>
+		<input type=hidden value='{{ content }}' name='review'>
+	  </form>
+    <br>
+</div>
+
+<div id='button'>
+	  <form action="/">
+	    <input type=submit value='Submit another songtext'>
+	  </form>
+</div>
+
+  </body>
+</html>

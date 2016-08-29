@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Song mood classification based on lyrics</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+
+<h2>Please enter the songtext below:</h2>
+
+{% from "_formhelpers.html" import render_field %}
+
+<form method=post action="/results">
+  <dl>
+	{{ render_field(form.moviereview, cols='30', rows='10') }}
+  </dl>
+  <div>
+	  <input type=submit value='Submit songtext' name='submit_btn'>
+  </div>
+</form>
+
+<p><hr><strong>Note: </strong> This is a simplified version of the original app; the lyrics have to be entered (or copy & pasted) due to restrictions to the free PythonAnywhere account, which doesn't allow outbund traffic -- the original version of this app was fetching lyrics by artist and title from LyricsWikia.</p>
+
+<p>If you are interested in obtaining the source code, please refer to the GitHub repository at <a href="https://github.com/rasbt/musicmood">https://github.com/rasbt/musicmood</a>.<hr></p>
+
+<p>
+
+
+  </body>
+</html>
