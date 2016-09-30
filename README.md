@@ -9,10 +9,10 @@ This project is about building a music recommendation system for users who want 
 ### Links
 
 - [The web application](http://sebastianraschka.com/Webapps/musicmood.html)
-- [The data collection IPython notebook](http://nbviewer.ipython.org/github/rasbt/musicmood/blob/master/code/collect_data/data_collection.ipynb)
-- [The initial model training IPython notebook](http://nbviewer.ipython.org/github/rasbt/musicmood/blob/master/code/classify_lyrics/nb_init_model.ipynb)
-- [The updated model training with white lists IPython notebook](http://nbviewer.ipython.org/github/rasbt/musicmood/blob/master/code/classify_lyrics/nb_whitelist_model.ipynb)
-- [Experiments with Random Forests IPython notebook](http://nbviewer.ipython.org/github/rasbt/musicmood/blob/master/code/classify_lyrics/random_forests.ipynb)
+- [The data collection IPython notebook](http://nbviewer.ipython.org/github/rasbt/musicmood/blob/master/code/webapp/collect_data/data_collection.ipynb)
+- [The initial model training IPython notebook](http://nbviewer.ipython.org/github/rasbt/musicmood/blob/master/code/webapp/classify_lyrics/nb_init_model.ipynb)
+- [The updated model training with white lists IPython notebook](http://nbviewer.ipython.org/github/rasbt/musicmood/blob/master/code/webapp/classify_lyrics/nb_whitelist_model.ipynb)
+- [Experiments with Random Forests IPython notebook](http://nbviewer.ipython.org/github/rasbt/musicmood/blob/master/code/webapp/classify_lyrics/random_forests.ipynb)
 - [An article about my experiences with this project](http://sebastianraschka.com/Articles/2014_musicmood.html)
 - [A keynote presentation about this project](http://www.slideshare.net/SebastianRaschka/musicmood-20140912)
 
