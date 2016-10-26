@@ -1,5 +1,5 @@
-dataset/validation/valid_lyrics_200.csv
-dataset/training/train_lyrics_1000.csv
+#dataset/validation/valid_lyrics_200.csv
+#dataset/training/train_lyrics_1000.csv
 dataset/auxiliary/aux_lyrics.csv
 
 dataset/validation/h5_valid/*.h5
