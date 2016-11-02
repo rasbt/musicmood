@@ -8,13 +8,14 @@ This project is about building a music recommendation system for users who want 
 
 ### Links
 
-- [The web application](http://sebastianraschka.com/Webapps/musicmood.html)
+- [The web application](http://rasbt.pythonanywhere.com)
 - [The data collection IPython notebook](code/collect_data/data_collection.ipynb)
 - [The initial model training IPython notebook](code/classify_lyrics/nb_init_model.ipynb)
 - [The updated model training with white lists IPython notebook](code/classify_lyrics/nb_whitelist_model.ipynb)
 - [Experiments with Random Forests IPython notebook](code/classify_lyrics/random_forests.ipynb)
-- [An article about my experiences with this project](http://sebastianraschka.com/Articles/2014_musicmood.html)
-- [A keynote presentation about this project](http://www.slideshare.net/SebastianRaschka/musicmood-20140912)
+- [An article about my experiences with this project](http://sebastianraschka.com/blog/2014/musicmood.html)
+- [A keynote presentation about this project](https://speakerdeck.com/rasbt/musicmood-machine-learning-in-automatic-music-mood-prediction-based-on-song-lyrics)
+- [A more technical report on arXiv](https://arxiv.org/abs/1611.00138)
 
 <br>
 <br>
